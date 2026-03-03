@@ -1,0 +1,48 @@
+{
+  "name": "thesis/grpc-health",
+  "description": "Thesis Grpc Health",
+  "license": "MIT",
+  "type": "library",
+  "authors": [
+    {
+      "name": "kafkiansky",
+      "email": "vadimzanfir@gmail.com"
+    },
+    {
+      "name": "Valentin Udaltsov",
+      "email": "udaltsov.valentin@gmail.com"
+    },
+    {
+      "name": "Thesis Team",
+      "homepage": "https://github.com/orgs/thesis-php/people"
+    }
+  ],
+  "require": {
+    "php": "^8.4",
+    "amphp/amp": "^3.1",
+    "thesis/grpc": "^0.1.0",
+    "thesis/protobuf": "^0.1.5"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^12.4",
+    "symfony/var-dumper": "^8.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Grpc\\Health\\V1\\": "genproto/Grpc/Health/V1",
+      "Thesis\\Grpc\\Health\\": "src/"
+    },
+    "files": [
+      "genproto/Grpc/Health/V1/autoload.metadata.php"
+    ]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Thesis\\Grpc\\Health\\": "tests/"
+    }
+  },
+  "config": {
+    "lock": false,
+    "sort-packages": true
+  }
+}
