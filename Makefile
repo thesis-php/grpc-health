@@ -117,6 +117,18 @@ rescaffold:
 
 # ---
 
+compile:
+	docker run --rm \
+		--pull always \
+        --user $(DOCKER_USER) \
+        -v $(PWD):/workspace \
+        -w /workspace \
+        ghcr.io/thesis-php/protoc-plugin:latest \
+        -I third_party/grpc \
+        --php-plugin_out=genproto \
+        third_party/grpc/grpc/health/v1/*.proto
+.PHONY: compile
+
 var:
 	mkdir -p var
 
