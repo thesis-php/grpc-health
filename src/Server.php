@@ -5,12 +5,12 @@ declare(strict_types=1);
 namespace Thesis\Grpc\Health;
 
 use Amp\Cancellation;
-use Google\Rpc\Code;
-use Grpc\Health\V1\HealthCheckRequest;
-use Grpc\Health\V1\HealthCheckResponse;
-use Grpc\Health\V1\HealthListRequest;
-use Grpc\Health\V1\HealthListResponse;
-use Grpc\Health\V1\HealthServer;
+use Thesis\Google\Rpc\Code;
+use Thesis\Grpc\Health\V1\HealthCheckRequest;
+use Thesis\Grpc\Health\V1\HealthCheckResponse;
+use Thesis\Grpc\Health\V1\HealthListRequest;
+use Thesis\Grpc\Health\V1\HealthListResponse;
+use Thesis\Grpc\Health\V1\HealthServer;
 use Thesis\Grpc\InvokeError;
 use Thesis\Grpc\Metadata;
 use Thesis\Protobuf;

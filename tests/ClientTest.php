@@ -6,15 +6,15 @@ namespace Thesis\Grpc\Health;
 
 use Amp\Cancellation;
 use Amp\NullCancellation;
-use Google\Rpc\Code;
-use Grpc\Health\V1\HealthCheckResponse;
-use Grpc\Health\V1\HealthCheckResponse\ServingStatus as HealthStatus;
-use Grpc\Health\V1\HealthClient;
 use Testo\Assert;
 use Testo\Test;
+use Thesis\Google\Rpc\Code;
 use Thesis\Grpc;
 use Thesis\Grpc\Client\Invoke;
 use Thesis\Grpc\ClientStream;
+use Thesis\Grpc\Health\V1\HealthCheckResponse;
+use Thesis\Grpc\Health\V1\HealthCheckResponse\ServingStatus as HealthStatus;
+use Thesis\Grpc\Health\V1\HealthClient;
 use Thesis\Grpc\InvokeError;
 use Thesis\Grpc\Metadata;
 use function Amp\delay;
@@ -77,7 +77,7 @@ final class ClientTest
 }
 
 /**
- * @template-implements ClientStream<\Grpc\Health\V1\HealthCheckRequest, HealthCheckResponse>
+ * @template-implements ClientStream<\Thesis\Grpc\Health\V1\HealthCheckRequest, HealthCheckResponse>
  */
 final readonly class FakeClientStream implements ClientStream
 {

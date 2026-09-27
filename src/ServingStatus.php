@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Thesis\Grpc\Health;
 
-use Grpc\Health\V1\HealthCheckResponse\ServingStatus as HealthStatus;
+use Thesis\Grpc\Health\V1\HealthCheckResponse\ServingStatus as HealthStatus;
 
 /**
  * @api
