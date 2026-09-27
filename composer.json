@@ -21,10 +21,10 @@
         "php": "^8.4",
         "amphp/amp": "^3.1",
         "amphp/pipeline": "^1.2",
-        "thesis/googleapis-rpc-types": "^0.2",
-        "thesis/grpc-client": "^0.2",
-        "thesis/grpc-protocol": "^0.2",
-        "thesis/grpc-server": "^0.2",
+        "thesis/googleapis-rpc-types": "^0.3",
+        "thesis/grpc-client": "^0.3",
+        "thesis/grpc-protocol": "^0.3",
+        "thesis/grpc-server": "^0.3",
         "thesis/protobuf": "^0.2",
         "thesis/protoregistry": "^0.1.2"
     },
@@ -36,11 +36,11 @@
     },
     "autoload": {
         "psr-4": {
-            "Grpc\\Health\\V1\\": "genproto/Grpc/Health/V1",
-            "Thesis\\Grpc\\Health\\": "src/"
+            "Thesis\\Grpc\\Health\\": "src/",
+            "Thesis\\Grpc\\Health\\V1\\": "genproto/Thesis/Grpc/Health/V1"
         },
         "files": [
-            "genproto/Grpc/Health/V1/autoload.metadata.php"
+            "genproto/Thesis/Grpc/Health/V1/autoload.metadata.php"
         ]
     },
     "autoload-dev": {

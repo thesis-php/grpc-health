@@ -6,12 +6,12 @@ namespace Thesis\Grpc\Health;
 
 use Amp\DeferredCancellation;
 use Amp\NullCancellation;
-use Google\Rpc\Code;
-use Grpc\Health\V1\HealthCheckRequest;
-use Grpc\Health\V1\HealthCheckResponse\ServingStatus as HealthStatus;
-use Grpc\Health\V1\HealthListRequest;
 use Testo\Assert;
 use Testo\Test;
+use Thesis\Google\Rpc\Code;
+use Thesis\Grpc\Health\V1\HealthCheckRequest;
+use Thesis\Grpc\Health\V1\HealthCheckResponse\ServingStatus as HealthStatus;
+use Thesis\Grpc\Health\V1\HealthListRequest;
 use Thesis\Grpc\InvokeError;
 use Thesis\Grpc\Metadata;
 use function Amp\async;
